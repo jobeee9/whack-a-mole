@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="design.css"> 
+    <script src="game.js"></script>
+    <title>Whack A Mole</title>
+</head>
+
+<body>
+    <!-- main page video moving background -->
+    <video id="video-background" autoplay muted loop>
+        <source src="poke-background.mp4" type="video/mp4">
+    </video>
+
+    <!-- main page button -->
+    <div id="content">
+    <button id="start" onclick="myFunction()">START</button>
+
+    <!-- main page welcome image title -->
+    <img id="image" src="welcome.png" alt="title">
+    </div>
+
+    <div id="Famdiglet">
+        <img id="Famdig" src="Diglettfam.png" alt="title">
+        </div>
+    
+    <div id="Famdiglet1">
+        <img id="Famdig" src="Diglettfam.png" alt="title">
+        </div>
+
+    <!-- score -->
+    <h2 id="score">SCORE <span id="scoreValue">0</span></h2>
+
+    <!-- 3x3 board -->
+    <div id="board"></div>
+
+    <!-- lives -->
+    <div id="lives"></div>
+</body>

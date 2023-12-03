@@ -1,0 +1,131 @@
+img { /*main page welcome image title*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.hidden { /*to hide*/
+    display: none;
+}
+
+.start{ /*start game background katong mo lihok*/
+    background-image: url("https://pixahive.com/wp-content/uploads/2021/02/green-grass-effect-background-336011-pixahive.jpg");
+    background-size: cover;
+    cursor: url('mallet.png'), auto;
+}
+
+body{ /*ang main page body*/
+    background-color: #7cd6ff;
+    margin: 0;
+    overflow: hidden;
+}
+
+#Famdiglet img{
+    right: 50%;
+    top:300px;
+    transform: translate(-50%, -50%,);
+    z-index: 2;
+    float:right;
+    display: flex;
+}
+#Famdiglet1 img{
+    left: 50%;
+    top:300px;
+    transform: translate(-50%, -50%,);
+    z-index: 2;
+    float:left;
+}
+
+#video-background { /*ang main page background*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#content { /*id sa main page background and button*/
+    position: relative;
+    z-index: 1;
+}
+
+#start { /*ang start button*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-color: blue;
+    outline: none;
+    border-radius: 15px;
+    background-color: #FFDE00;
+    font-size: 50px;
+    color:blue;
+    position: absolute;
+    left: 50%;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#board { /*3x3 container*/
+    width: 800px;
+    height: 600px;
+    background-color: transparent;
+    margin: 100px auto;
+    display: none;
+    flex-wrap: wrap;
+}
+
+#board div { /*picture sa 3x3 ground*/
+    width: 266px;
+    height: 200px;
+    background-image: url('ground.png');
+    background-size: cover;
+}
+
+#board div img { /*picture ni diglett*/
+    width: 265px;
+    height: 250px;
+    z-index: -1;
+    position: absolute;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#score { /*sudlanan sa score*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #dd0000;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 35%; 
+    transform: translate(-50%);
+}
+
+#lives { /*sudlanan sa hearts*/
+    width: 300px;
+    height: 100px;
+    top: 10px;
+    left: 63%;
+    margin: auto;
+    transform: translate(-50%);
+    background-color: transparent;
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+}
+
+#lives div { /*lives image, katong hearts*/
+    width: 100px;
+    height: 100px;
+    background-image: url('heart.png');
+    background-size: cover;
+}
